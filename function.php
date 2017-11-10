@@ -11,9 +11,8 @@ function clearDir($dir)
             {
                 continue;
             }
-            if (is_file($dir . $file)) {
-                $n++;
-            }
+            unlink($dir . $file);
+
         }
     }
     closedir($dh);
