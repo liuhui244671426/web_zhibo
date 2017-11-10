@@ -29,7 +29,7 @@
             }
         }
         if(video.src){
-            ws.send(back.toDataURL("image/jpeg", 0.9));//传递90%清晰度
+            ws.send(back.toDataURL("image/jpeg", 0.9));//传递90%清晰度, https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCanvasElement/toDataURL
         }
         setTimeout(draw, 100);
     };
