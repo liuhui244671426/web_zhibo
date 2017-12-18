@@ -8,6 +8,7 @@
 <video id="video" autoplay="" style='width:640px;height:480px'></video>
 <canvas id="output" style="display:none"></canvas>
 <script type="text/javascript" charset="utf-8">
+    //var ws = new WebSocket("ws://192.168.1.23:8888");
     var ws = new WebSocket("ws://127.0.0.1:8888");
     var back = document.getElementById('output');
     var backcontext = back.getContext('2d');
